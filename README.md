@@ -1,2 +1,2 @@
 # ratingApp
-A tool for measuring the job performance of employees.
+A tool for measuring the job performance.
