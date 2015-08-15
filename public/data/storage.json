@@ -1,0 +1,126 @@
+[{
+  "id": 1,
+  "name": "Mike Meier",
+  "city": "Munich",
+  "gender": "Male",
+  "age": 27,
+  "department": "Planning",
+  "rating": {
+    "quality": 81,
+    "quantity": 15,
+    "knowledge": 40,
+    "initiative": 10,
+    "communication": 90,
+    "team": 80,
+    "learning": 50,
+    "motivation": 90,
+    "performance": 70,
+    "organization": 10,
+    "total": 0
+  }
+},
+{
+    "id": 2,
+    "name": "Steve Summer",
+    "city": "Frankfurt",
+    "gender": "Male",
+    "age": 28,
+    "department": "Marketing",
+    "rating": {
+        "quality": 100,
+        "quantity": 90,
+        "knowledge": 40,
+        "initiative": 70,
+        "communication": 90,
+        "team": 80,
+        "learning": 90,
+        "motivation": 90,
+        "performance": 80,
+        "organization": 30,
+        "total": 0
+  }
+},
+{
+   "id": 3,
+   "name": "Bruce Buttler",
+    "city": "Hamburg",
+    "gender": "Male",
+    "age": 29,
+    "department": "Accounting",
+    "rating": {
+        "quality": 95,
+        "quantity": 15,
+        "knowledge": 40,
+        "initiative": 10,
+        "communication": 90,
+        "team": 80,
+        "learning": 50,
+        "motivation": 90,
+        "performance": 70,
+        "organization": 10,
+        "total": 0
+  }
+},
+{
+    "id": 4,
+    "name": "Daisy Dougles",
+    "city": "New York",
+    "gender": "Female",
+    "age": 30,
+    "department": "Accounting",
+    "rating": {
+        "quality": 10,
+        "quantity": 15,
+        "knowledge": 40,
+        "initiative": 10,
+        "communication": 90,
+        "team": 80,
+        "learning": 50,
+        "motivation": 90,
+        "performance": 70,
+        "organization": 10,
+        "total": 0
+  }
+},
+{
+    "id": 5,
+    "name": "Molly Michell",
+    "city": "Michigan",
+    "gender": "Female",
+    "age": 30,
+    "department": "Marketing",
+    "rating": {
+        "quality": 10,
+        "quantity": 15,
+        "knowledge": 40,
+        "initiative": 10,
+        "communication": 90,
+        "team": 80,
+        "learning": 50,
+        "motivation": 90,
+        "performance": 70,
+        "organization": 10,
+        "total": 0
+  }
+},
+{
+    "id": 6,
+    "name": "Elizabeth Eager",
+    "city": "San Francisco",
+    "gender": "Female",
+    "age": 30,
+    "department": "Strategy",
+    "rating": {
+        "quality": 10,
+        "quantity": 15,
+        "knowledge": 10,
+        "initiative": 10,
+        "communication": 10,
+        "team": 20,
+        "learning": 20,
+        "motivation": 30,
+        "performance": 10,
+        "organization": 10,
+        "total": 0
+  }
+}]

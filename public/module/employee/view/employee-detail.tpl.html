@@ -1,0 +1,101 @@
+<div class="container" style="margin-top:100px;">
+  <div ng-controller="EmployeeListCtrl as detail">
+    <div ng-repeat="employee in detail.employees | filter:{'id':  routeId}">
+     <h3>Rating for {{employee.name}}</h3><br />
+     <div class="panel panel-default">
+         <div class="panel-heading">Quality/Achive usable results</div>
+         <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.quality)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.quality)">{{employee.rating.quality}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-default">
+         <div class="panel-heading">Working pace/Quantity</div>
+         <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.quantity)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.quantity)">{{employee.rating.quantity}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-default">
+         <div class="panel-heading">Expertise</div>
+         <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.knowledge)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.knowledge)">{{employee.rating.knowledge}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-default">
+         <div class="panel-heading">Initiative</div>
+         <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.initiative)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.initiative)">{{employee.rating.initiative}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-default">
+         <div class="panel-heading">Communication skills</div>
+         <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.communication)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.communication)">{{employee.rating.communication}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-default">
+         <div class="panel-heading">Ability to work in a team</div>
+         <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.team)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.team)">{{employee.rating.team}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-default">
+         <div class="panel-heading">Abiltity to learn/Readiness of mind</div>
+         <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.learning)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.learning)">{{employee.rating.learning}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-default">
+         <div class="panel-heading">Motivation</div>
+         <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.motivation)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.motivation)">{{employee.rating.motivation}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-default">
+         <div class="panel-heading">Appearance/Acceptance among their colleagues and external partners</div>
+         <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.performance)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.performance)">{{employee.rating.performance}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-default">
+         <div class="panel-heading">Planning and organizational skills</div>
+             <div class="panel-body">
+             <div class="progress">
+                 <div ng-class="classChange(employee.rating.organization)" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="percentageStyle(employee.rating.organization)">{{employee.rating.organization}}%</div>
+             </div>
+         </div>
+     </div>
+     <div class="panel panel-primary">
+         <div class="panel-heading">Total Result (<span class="glyphicon glyphicon-ban-circle"></span>)</div>
+         <div class="panel-body">
+             <div class="progress">
+                <rating-total data="total(employee)"
+                  class-change="classChange(total(employee))"
+                  percentage-style="percentageStyle(total(employee))">
+                </rating-total>
+          </div>
+         </div>
+     </div>
+     <div class="buttons">
+         <a href="#/employees" style="margin-bottom:20px;" class="btn btn-success btn-lg pull-right">Back to list</a>
+     </div>
+    </div>
+  </div>
+</div>
