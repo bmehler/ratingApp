@@ -1,4 +1,4 @@
-  angular
+angular
   .module('data.storage', [ ] )
   .service('EmployeeService', EmployeeService);
 
