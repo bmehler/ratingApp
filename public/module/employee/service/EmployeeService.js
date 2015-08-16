@@ -2,16 +2,16 @@
   .module('data.storage', [ ] )
   .service('EmployeeService', EmployeeService);
 
-  EmployeeService.$inject = ['$http'];
+EmployeeService.$inject = ['$http'];
 
-  var urlBase = 'data/storage.json';
+var urlBase = 'data/storage.json';
 
-  function EmployeeService ($http) {
-    return {
-      getEmployee: getEmployee
-    };
+function EmployeeService ($http) {
+  return {
+    getEmployee: getEmployee
+  };
 
-    function getEmployee () {
-      return $http.get(urlBase);
-    }
+  function getEmployee () {
+    return $http.get(urlBase);
+  }
   }
