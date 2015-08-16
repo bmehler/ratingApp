@@ -1,36 +1,36 @@
 <div class="container" style="margin-top:100px;">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Get Ratings of your Employees</h3>
-        </div>
-        <div class="panel-body">
-            <p>Find an employee</p>
-            <div class="form-group">
-                <input class="form-control" type="text" ng-model="name" />
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Get Ratings of your Employees</h3>
+    </div>
+    <div class="panel-body">
+      <p>Find an employee</p>
+      <div class="form-group">
+        <input class="form-control" type="text" ng-model="name" />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div ng-controller="EmployeeListCtrl as employee">
+      <div ng-repeat="employee in employee.employees | filter: name | orderBy: employee.orderProp">
+          <div class="col-md-4">
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">{{employee.name}}</h3>
+                    </div>
+                    <div class="panel-body">Gender: {{employee.gender}}
+                      <br />Age: {{employee.age}}
+                      <br />Department: {{employee.department}}
+                      <br />City: {{employee.city }}
+                    </div>
+                    <div class="panel-footer">
+                      <a class="btn btn-warning btn-xs" href="#/employee/rating/{{employee.id}}">show rating</a>
+                        <span style="margin-top: 3px;" class="badge pull-right">
+                          <rating-average data="employee.rating"></rating-average>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div ng-controller="EmployeeListCtrl as employee">
-          <div ng-repeat="employee in employee.employees | filter: name | orderBy: employee.orderProp">
-              <div class="col-md-4">
-                  <div class="panel panel-primary">
-                      <div class="panel-heading">
-                          <h3 class="panel-title">{{employee.name}}</h3>
-                      </div>
-                      <div class="panel-body">Gender: {{employee.gender}}
-                          <br />Age: {{employee.age}}
-                          <br />Department: {{employee.department}}
-                          <br />City: {{employee.city }}
-                      </div>
-                      <div class="panel-footer">
-                          <a class="btn btn-warning btn-xs" href="#/employee/rating/{{employee.id}}">show rating</a>
-                            <span style="margin-top: 3px;" class="badge pull-right">
-                              <rating-average data="employee.rating"></rating-average>
-                            </span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-    </div>
+  </div>
 </div>
