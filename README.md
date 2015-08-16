@@ -2,7 +2,7 @@
 A tool for measuring the job performance of your employees.
 
 "ratingApp" is a small project to get familiar with AngularJS.
-The ratingApp uses a JSON Storage to display employee specific rating data.
+The ratingApp uses JSON for storing the employee specific rating data.
 
 ## Installation
 To install the ratingApp clone the repository and install the dependencies.
