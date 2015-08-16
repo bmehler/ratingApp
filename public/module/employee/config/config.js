@@ -1,7 +1,7 @@
 angular
   .module('employee.config',  [
-      'data.storage',
-      'ngRoute'
+    'data.storage',
+    'ngRoute'
   ])
   .config(config);
 
