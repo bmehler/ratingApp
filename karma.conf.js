@@ -19,7 +19,7 @@ module.exports = function(config) {
         'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-mocks.js',
         'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.js',
         'public/**/**/**/*.js',
-        'test/**/*Spec.js'
+        'public/module/employee/test/**/*Spec.js'
     ],
 
 
