@@ -4,7 +4,7 @@
   "description": "A tool for measuring the job performance",
   "main": "server.js",
   "author": "Bernhard Mehler",
-  "license": "GPL",
+  "license": "MIT",
   "engines": {
     "node": ">= 0.10.25"
   },
