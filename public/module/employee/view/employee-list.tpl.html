@@ -13,24 +13,24 @@
   <div class="row">
     <div ng-controller="EmployeeListCtrl as employee">
       <div ng-repeat="employee in employee.employees | filter: name | orderBy: employee.orderProp">
-          <div class="col-md-4">
-              <div class="panel panel-primary">
-                  <div class="panel-heading">
-                      <h3 class="panel-title">{{employee.name}}</h3>
-                    </div>
-                    <div class="panel-body">Gender: {{employee.gender}}
-                      <br />Age: {{employee.age}}
-                      <br />Department: {{employee.department}}
-                      <br />City: {{employee.city }}
-                    </div>
-                    <div class="panel-footer">
-                      <a class="btn btn-warning btn-xs" href="#/employee/rating/{{employee.id}}">show rating</a>
-                        <span style="margin-top: 3px;" class="badge pull-right">
-                          <rating-average data="employee.rating"></rating-average>
-                        </span>
-                    </div>
-                </div>
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{employee.name}}</h3>
             </div>
+            <div class="panel-body">Gender: {{employee.gender}}
+              <br />Age: {{employee.age}}
+              <br />Department: {{employee.department}}
+              <br />City: {{employee.city }}
+            </div>
+            <div class="panel-footer">
+              <a class="btn btn-warning btn-xs" href="#/employee/rating/{{employee.id}}">show rating</a>
+              <span style="margin-top: 3px;" class="badge pull-right">
+                  <rating-average data="employee.rating"></rating-average>
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
   </div>
 </div>
