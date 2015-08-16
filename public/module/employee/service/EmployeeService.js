@@ -1,17 +1,17 @@
-angular
-      .module('data.storage', [ ] )
-      .service('EmployeeService', EmployeeService);
+  angular
+  .module('data.storage', [ ] )
+  .service('EmployeeService', EmployeeService);
 
-EmployeeService.$inject = ['$http'];
+  EmployeeService.$inject = ['$http'];
 
-var urlBase = 'data/storage.json';
+  var urlBase = 'data/storage.json';
 
-function EmployeeService ($http) {
+  function EmployeeService ($http) {
     return {
-        getEmployee: getEmployee
+      getEmployee: getEmployee
     };
 
     function getEmployee () {
-        return $http.get(urlBase);
+      return $http.get(urlBase);
     }
-}
+  }
