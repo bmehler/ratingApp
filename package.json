@@ -1,7 +1,7 @@
 {
   "name": "ratingApp",
   "version": "1.0.1",
-  "description": "A tool for measuring the job performance",
+  "description": "A tool for measuring the job performance of your employees",
   "main": "server.js",
   "author": "Bernhard Mehler",
   "license": "MIT",
