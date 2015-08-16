@@ -27,7 +27,7 @@ $ npm test
 ```
 ### Configuration
 As I used for development purposes the headless testing with PhantomJS.
-Please feel free to change the browser. The karma-firefox-launcher and karma-chrome-launcher are already installed during npm install.
+Please feel free to change the browser. Both the karma-firefox-launcher and karma-chrome-launcher are already installed during npm install.
 ```js
 // karma.conf.js
 module.exports = function(config) {
