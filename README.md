@@ -1,5 +1,5 @@
 # ratingApp
-A tool for measuring the job performance.
+A tool for measuring the job performance of your employees.
 
 "ratingApp" is a small project to get familiar with AngularJS.
 The ratingApp uses a JSON Storage to display employee specific rating data.
