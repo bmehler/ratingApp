@@ -5,38 +5,43 @@ A tool for measuring the job performance of your employees.
 The ratingApp uses a JSON Storage to display employee specific rating data.
 
 ## Installation
-
 To install the ratingApp clone the repository and install the dependencies.
-
 ```
 $ git clone https://github.com/bmehler/ratingApp.git
 $ cd ratingApp
 $ npm install
 ```
 ## Quick start
-
 To run the app enter:
-
 ```
 $ npm start
 ```
-
 Open your browser and enter:
-
 ```
 http://localhost:8080
 ```
-
 ## Running tests (Karma/Jasmine)
-
 To run the tests enter:
-
 ```
 $ npm test
 ```
-
+### Configuration
+As I used for development purposes the headless testing with PhantomJS.
+Please feel free to change the browser. The karma-chrome and karma-firefox launcher are already installed during npm install.
+```js
+// karma.conf.js
+module.exports = function(config) {
+  config.set({
+    browsers: ['Firefox', 'Chrome'],
+  });
+};
+```
+### Troubleshooting
+If you got an error regarding  **libfontconfig.so** please run:
+```
+$ (sudo) apt-get install libfontconfig
+```
 ## License
-
 The MIT License
 
 Copyright (c) 2015 Bernhard Mehler &lt;bernhard.mehler@gmail.com&gt;
