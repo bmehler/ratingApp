@@ -14,4 +14,4 @@ function EmployeeService ($http) {
   function getEmployee () {
     return $http.get(urlBase);
   }
-  }
+}
