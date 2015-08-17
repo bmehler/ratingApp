@@ -34,10 +34,10 @@ function ratingAverage() {
     controller: function($scope) {
       var sum = 0;
       angular.forEach($scope.data, function (value, key) {
-      sum = sum + value;
-    })
-    total = (sum / 10);
-    $scope.data = total;
+        sum = sum + value;
+      })
+      total = (sum / 10);
+      $scope.data = total;
     }
   };
 }
