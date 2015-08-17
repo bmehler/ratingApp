@@ -23,11 +23,11 @@ http://localhost:8080
 ## Running tests (Karma/Jasmine)
 To run the tests enter:
 ```
-$ npm test
+$ (npm test | npm run test-single-run)
 ```
 ### Configuration
-As I used for development purposes the headless testing with PhantomJS.
-Please feel free to change the browser. Both the karma-firefox-launcher and karma-chrome-launcher are already installed during npm install.
+I used for development purposes the headless testing with PhantomJS.
+Feel free to change the browser setting in karma.conf.js. Both the karma-firefox-launcher and karma-chrome-launcher are already installed during npm install.
 ```js
 // karma.conf.js
 module.exports = function(config) {
